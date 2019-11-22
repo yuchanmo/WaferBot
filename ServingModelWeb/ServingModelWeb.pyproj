@@ -30,6 +30,26 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ClusterApi\admin.py" />
+    <Compile Include="ClusterApi\apps.py" />
+    <Compile Include="ClusterApi\migrations\__init__.py" />
+    <Compile Include="ClusterApi\models.py" />
+    <Compile Include="ClusterApi\tests.py" />
+    <Compile Include="ClusterApi\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClusterApi\views.py" />
+    <Compile Include="ClusterApi\__init__.py" />
+    <Compile Include="Dashboard\admin.py" />
+    <Compile Include="Dashboard\apps.py" />
+    <Compile Include="Dashboard\migrations\__init__.py" />
+    <Compile Include="Dashboard\models.py" />
+    <Compile Include="Dashboard\tests.py" />
+    <Compile Include="Dashboard\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dashboard\views.py" />
+    <Compile Include="Dashboard\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="ServingModelWeb\__init__.py" />
     <Compile Include="ServingModelWeb\settings.py" />
@@ -37,9 +57,20 @@
     <Compile Include="ServingModelWeb\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClusterApi\templates\ClusterApi\index.html" />
+    <Content Include="Dashboard\templates\Dashboard\index.html" />
+    <Content Include="reference.txt" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ClusterApi\" />
+    <Folder Include="ClusterApi\migrations\" />
+    <Folder Include="ClusterApi\templates\" />
+    <Folder Include="ClusterApi\templates\ClusterApi\" />
+    <Folder Include="Dashboard\" />
+    <Folder Include="Dashboard\migrations\" />
+    <Folder Include="Dashboard\templates\" />
+    <Folder Include="Dashboard\templates\Dashboard\" />
     <Folder Include="ServingModelWeb\" />
   </ItemGroup>
   <ItemGroup>

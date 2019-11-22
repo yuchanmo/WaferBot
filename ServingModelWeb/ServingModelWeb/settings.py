@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'ClusterApi'
 ]
 
 # Middleware framework
@@ -75,23 +77,23 @@ WSGI_APPLICATION = 'ServingModelWeb.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-# settings.py 파일
-# 앞뒤 코드 생략
 DATABASES = {
     'default': {
-        'NAME': 'DataBase이름',
-        'ENGINE': 'sql_server.pyodbc',
-        'HOST': 'DB의 IP',
-        'USER': 'DB접근 ID',
-        'PASSWORD': 'DB접근 PW',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+# settings.py 파일
+# 앞뒤 코드 생략
+#DATABASES = {
+#    'default': {
+#        'NAME': 'DataBase이름',
+#        'ENGINE': 'sql_server.pyodbc',
+#        'HOST': 'DB의 IP',
+#        'USER': 'DB접근 ID',
+#        'PASSWORD': 'DB접근 PW',
+#    }
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

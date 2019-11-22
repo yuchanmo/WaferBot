@@ -1,0 +1,5 @@
+setup reference:
+https://medium.com/@mahdi04/train-predict-simple-machine-learning-models-with-django-rest-76ce46bf2868
+
+rest_framework:
+https://www.django-rest-framework.org/
