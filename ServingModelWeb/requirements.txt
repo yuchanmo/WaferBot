@@ -1,0 +1,11 @@
+django == 2.1
+djangorestframework
+markdown
+django-filter
+django-pyodbc-azure
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+umap-learn

@@ -1,0 +1,8 @@
+pip==19.0.3
+setuptools==40.8.0
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+umap-learn

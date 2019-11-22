@@ -1,0 +1,9 @@
+pip==19.0.3
+setuptools==40.8.0
+petl
+pandas
+numpy
+nose
+scikit-learn
+pyodbc
+psycopg2
