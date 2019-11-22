@@ -83,6 +83,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+MODEL_ROOT = os.path.join(BASE_DIR, 'models')
 # settings.py 파일
 # 앞뒤 코드 생략
 #DATABASES = {
