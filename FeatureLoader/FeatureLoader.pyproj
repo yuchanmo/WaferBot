@@ -23,7 +23,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="FeatureLoader.py" />
-    <Compile Include="test\mssqltest.py">
+    <Compile Include="petl_tutorial\mssqltest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="petl_tutorial\postgresqltest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sqlalchemy_tutorial\mssqlcoretest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sqlalchemy_tutorial\mssqlormtest.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -42,7 +51,8 @@
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="test\" />
+    <Folder Include="sqlalchemy_tutorial\" />
+    <Folder Include="petl_tutorial\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
