@@ -5,11 +5,23 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve,precision_recall_curve
 from sklearn.model_selection import cross_val_score,cross_val_predict
+from collections import namedtuple
 
+ClassifierScoreForROCCurve = namedtuple('Classifier','model scores')
 
 def print_result_summary_of_classification(yreal,ypred):
     pass
 
+def roc_comparison_plot_among_models():
+
+
+def plot_roc_curve(fpr, tpr, label=None,figsize:tuple=(8,6)):
+    plt.plot(fpr, tpr, linewidth=2, label=label)
+    plt.plot([0, 1], [0, 1], 'k--')
+    plt.axis([0, 1, 0, 1])
+    plt.xlabel('FPR', fontsize=16)
+    plt.ylabel('TPR', fontsize=16)
+    plt.figure(figsize=figsize)
 
 class ClassificationBestScoreValidator():
     def __init__(self,yreal,yscore,figsize:tuple=(8,6)):
@@ -31,8 +43,7 @@ class ClassificationBestScoreValidator():
         plt.xlim([xlim_min, xlim_max])
         
         
-    def plot_precision_vs_recall(self):
-        
+    def plot_precision_vs_recall(self):        
         plt.title('Precision vs Recall')
         plt.plot(self.recalls, self.precisions, "b-", linewidth=2)
         plt.xlabel("precision", fontsize=16)
