@@ -22,6 +22,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="infra\validator\classification_validator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="infra\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="models\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="trainer\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="WaferMapBotModel.py" />
   </ItemGroup>
   <ItemGroup>
@@ -39,7 +51,15 @@
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="infra\" />
+    <Folder Include="infra\pipeline\" />
+    <Folder Include="infra\validator\" />
     <Folder Include="models\" />
+    <Folder Include="models\classifier\" />
+    <Folder Include="models\clusterer\" />
+    <Folder Include="trainer\" />
+    <Folder Include="trainer\classifier\" />
+    <Folder Include="trainer\clusterer\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

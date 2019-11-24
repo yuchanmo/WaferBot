@@ -22,17 +22,35 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="datamodel\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="FeatureLoader.py" />
-    <Compile Include="petl_tutorial\mssqltest.py">
+    <Compile Include="infra\db\connection.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="petl_tutorial\postgresqltest.py">
+    <Compile Include="infra\etl\extractor.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="sqlalchemy_tutorial\mssqlcoretest.py">
+    <Compile Include="infra\etl\loader.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="sqlalchemy_tutorial\mssqlormtest.py">
+    <Compile Include="infra\etl\transformer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="infra\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tutorialcode\petl_tutorial\mssqltest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tutorialcode\petl_tutorial\postgresqltest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tutorialcode\sqlalchemy_tutorial\mssqlcoretest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tutorialcode\sqlalchemy_tutorial\mssqlormtest.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -51,8 +69,15 @@
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="sqlalchemy_tutorial\" />
-    <Folder Include="petl_tutorial\" />
+    <Folder Include="datamodel\" />
+    <Folder Include="datamodel\gpdb\" />
+    <Folder Include="datamodel\sqlserver\" />
+    <Folder Include="infra\" />
+    <Folder Include="infra\etl\" />
+    <Folder Include="infra\db\" />
+    <Folder Include="tutorialcode\" />
+    <Folder Include="tutorialcode\sqlalchemy_tutorial\" />
+    <Folder Include="tutorialcode\petl_tutorial\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

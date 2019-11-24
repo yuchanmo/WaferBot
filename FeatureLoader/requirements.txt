@@ -8,4 +8,4 @@ scikit-learn
 pyodbc
 psycopg2
 sqlalchemy
-hdbscan
+alembic
